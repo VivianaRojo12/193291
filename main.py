@@ -19,7 +19,9 @@ def organizarse(lista):
       thread2 = threading.Thread(target=comer,args=[lista[2]])
       thread3 = threading.Thread(target=comer,args=[lista[4]])
       thread1.start()
+      thread1.join()
       thread2.start()
+      thread2.join()
       thread3.start()
       thread3.join()
 
@@ -44,6 +46,8 @@ if __name__ == '__main__':
    lista.append("Javi")
    lista.append("Dani")
    lista.append("Yoli de Limon")
+   lista.append("Pelusa Caligari")
+   lista.append("Saul Hernandez")
  
    print("Los filósofos se han reunido.\n")
    sentarse(lista)
