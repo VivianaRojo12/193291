@@ -33,7 +33,7 @@ tenedorArray = [1,1,1,1,1]
 
 for i in range(0,5):
     print("for uno: ", i)
-    tenedorArray[i] = threading.BoundedSemaphore(1)
+    tenedorArray[i] = threading.BoundedSemaphore(2)
 
 for i in range(0,5):
     print("for dos: ", i)
