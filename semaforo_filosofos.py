@@ -6,7 +6,7 @@ class TenedorFilosofo(threading.Thread):
         threading.Thread.__init__(self)
         self.tenedores = tenedores
         self.filosofosNum = filosofosNum
-        self.datoTemporal =  self.filosofosNum + 1 % 5
+        self.datoTemporal =  (self.filosofosNum + 1) % 5
    
     def hilosFilosofos(self):
         while True:
