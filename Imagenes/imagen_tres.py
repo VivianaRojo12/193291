@@ -1,3 +1,4 @@
+#Multiprocessing
 from multiprocessing import Pool #Implementación Pool
 from imgurpython import ImgurClient
 
