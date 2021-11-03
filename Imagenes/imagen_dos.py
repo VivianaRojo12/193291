@@ -1,3 +1,4 @@
+#Multithreading
 from imgurpython import ImgurClient
 from concurrent.futures import ThreadPoolExecutor
 
